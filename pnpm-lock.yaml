@@ -2,6 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.0.0
+  '@iconify-json/carbon': ^1.1.7
+  '@iconify-json/material-symbols': ^1.1.15
   '@unocss/preset-attributify': ^0.45.13
   '@unocss/preset-web-fonts': ^0.45.13
   '@unocss/reset': ^0.45.13
@@ -18,6 +20,8 @@ dependencies:
   solid-js: registry.npmmirror.com/solid-js/1.5.3
 
 devDependencies:
+  '@iconify-json/carbon': registry.npmmirror.com/@iconify-json/carbon/1.1.7
+  '@iconify-json/material-symbols': registry.npmmirror.com/@iconify-json/material-symbols/1.1.15
   '@unocss/preset-attributify': registry.npmmirror.com/@unocss/preset-attributify/0.45.13
   '@unocss/preset-web-fonts': registry.npmmirror.com/@unocss/preset-web-fonts/0.45.13
   babel-preset-solid: registry.npmmirror.com/babel-preset-solid/1.5.3_@babel+core@7.18.13
@@ -416,6 +420,22 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  registry.npmmirror.com/@iconify-json/carbon/1.1.7:
+    resolution: {integrity: sha512-QULSpNWKaX4auIbjITDynfALdJYvOOy/xZb+aLOqCgvpBcmbz5tbqvow4r25FWtVsi4FHVpNQ8vyJZXsD1Hlxg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify-json/carbon/-/carbon-1.1.7.tgz}
+    name: '@iconify-json/carbon'
+    version: 1.1.7
+    dependencies:
+      '@iconify/types': registry.npmmirror.com/@iconify/types/1.1.0
+    dev: true
+
+  registry.npmmirror.com/@iconify-json/material-symbols/1.1.15:
+    resolution: {integrity: sha512-4gjfhDK3C10CDbChjVnbtl4MDc3wDlAmo2vG7qbvKvJV9pI+C12t6GK+EYm93kQYVtOVJeq4loVxK10gbhab8A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify-json/material-symbols/-/material-symbols-1.1.15.tgz}
+    name: '@iconify-json/material-symbols'
+    version: 1.1.15
+    dependencies:
+      '@iconify/types': registry.npmmirror.com/@iconify/types/1.1.0
+    dev: true
 
   registry.npmmirror.com/@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify/types/-/types-1.1.0.tgz}
