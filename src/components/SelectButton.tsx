@@ -1,6 +1,6 @@
 export default (props) => {
   const slot = props.children;
-  const isHighLight = props.HighLight;
+  const isHighLight = props.highlight;
 
   return (
     <div
@@ -11,7 +11,12 @@ export default (props) => {
       transition-colors
       cursor-pointer
       hover="bg-red-100 border border-red-400"
-      class={isHighLight ? "border-red-400 bg-red-100" : "border-transparent"}
+      class={
+        isHighLight()
+          ? "bg-violet-100 border-violet-400"
+          : "bg-neutral-100 dark:bg-neutral-600 border-transparent"
+      }
+      onClick={props.onClick}
     >
       {slot}
     </div>
