@@ -31,7 +31,6 @@ const imagePath = (path: string) => {
     const img = new Image(400, 400);
     img.src = path;
     img.onload = (e) => {
-      console.log(e);
       resolve(img);
     };
   });
@@ -139,6 +138,7 @@ const App: Component = () => {
   });
 
   const handleSelectItem = ({ tab, index }: { tab: string; index: number }) => {
+    console.log(tab, index);
     setSelectedIndex({ ...selectedIndex(), [tab]: index });
   };
 
@@ -200,6 +200,7 @@ const App: Component = () => {
         justify-center
         gap-4
         max-w="65ch"
+        mt-5
         px-6
         py-12
         mx-auto
